@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#onBtnAction" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+    <Button fx:id="btnMain" layoutX="105.0" layoutY="186.0" mnemonicParsing="false" onAction="#onBtnAction" prefHeight="58.0" prefWidth="127.0" text="Oblicz" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtLicznikPromien" layoutX="94.0" layoutY="61.0" />
+      <TextField fx:id="txtLicznikWysokosc" layoutX="94.0" layoutY="99.0" />
+      <Label layoutX="261.0" layoutY="65.0" text="Promień" />
+      <Label layoutX="261.0" layoutY="103.0" text="Wysokość" />
+      <Label layoutX="261.0" layoutY="140.0" text="Grubość" />
+      <TextField fx:id="txtLicznikGrubosc" layoutX="94.0" layoutY="136.0" />
+      <RadioButton fx:id="rdbBlachaStalowa" layoutX="251.0" layoutY="186.0" mnemonicParsing="false" onAction="#onRDBStal" text="Blacha stalowa">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggle1" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rdbBlachaNierdz" layoutX="251.0" layoutY="215.0" mnemonicParsing="false" onAction="#onRDBNierdz" text="Blacha stalowa nierdzewna" toggleGroup="$toggle1" />
+      <TextField fx:id="txtCena" layoutX="340.0" layoutY="61.0" />
+      <TextField fx:id="txtMasa" layoutX="340.0" layoutY="99.0" />
+      <Label layoutX="507.0" layoutY="65.0" text="Cena" />
+      <Label layoutX="507.0" layoutY="103.0" text="Masa" />
+   </children>
+</AnchorPane>
